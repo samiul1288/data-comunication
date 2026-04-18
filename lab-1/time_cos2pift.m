@@ -1,0 +1,11 @@
+f= 1;
+a=3;
+d=4;
+sr=30;
+t=0:1/sr:d;
+y=a*cos(2*pi*f*t);
+plot(t,y);
+xlabel('Time (s)');
+ylabel('Amplitude');
+title('Simple Cosine Signal');
+legend('Cosine wave');

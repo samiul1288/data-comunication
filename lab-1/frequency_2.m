@@ -1,0 +1,10 @@
+Fs=500;
+t=0:1/fs:1-1/fs;
+x=sin(2*pi*50*t) + 0.5*sin(2*pi*150*t);
+N=length(x);
+X=fft(x);
+f=(0:N-1)*(fs/N);
+amplitude=abs(X)/N;
+figure;
+plot(f,amplitude);
+grid on;

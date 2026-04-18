@@ -1,0 +1,14 @@
+f=2;
+a=3;
+d =4;
+sr=1000;
+t=0:1/sr:d;
+y1=a*sin(2*pi*f*t);
+y2=a*cos(2*pi*f*t);
+plot(t,y1);
+hold on;
+plot(t,y2);
+xlabel('Time (s)');
+ylabel('Amplitude');
+title(' Sine cosine combined Signal');
+legend('Sine Wave', 'Cosine Wave');
