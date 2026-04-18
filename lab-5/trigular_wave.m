@@ -1,0 +1,10 @@
+f=1;
+a=2;
+d=10;
+sr=100;
+t=0:1/sr:d;
+x=4*a*abs(t*f-floor(t*f+.5))-a;
+plot(t,x,'LineWidth',2);
+xlabel('Time (s)');
+ylabel('Amplitude');
+title('Manual Triangular Wave');

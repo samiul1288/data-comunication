@@ -1,0 +1,13 @@
+f=1;
+a=2;
+d=10;sr=100;
+t=0:1/sr:d-1/sr;
+x=a*sign(sin(2*pi*f*t));
+figure;
+stairs(t,x,'LineWidth',2);
+xlabel('Time (s)');
+ylabel('Amplitude');
+title('Sine Square Signal');
+grid on;
+colorbar off;
+xlim([0,2]);

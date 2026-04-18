@@ -1,0 +1,11 @@
+f=5;
+duty=90;
+d=1;
+sr=1000;
+t=0:1/sr:d;
+x= square(2*pi*f*t,duty);
+x=(x+1)/2;
+plot(t,x,'LineWidth',2);
+xlabel('Time (s)');
+ylabel('Amplitude');
+title('Pulse Wave (10% Duty Cycle)');
